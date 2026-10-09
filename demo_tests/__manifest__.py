@@ -1,6 +1,6 @@
 {
     "name": "Tech Evening - Demo Tests",
-    "version": "20.0.1.0.0",
+    "version": "19.0.1.0.0",
     "summary": "Setup to run some tests as an educational demo.",
     "author": "Odoo PS",
     "website": "https://www.odoo.com",
@@ -13,10 +13,11 @@
     ],
     "assets": {
         "web.assets_tests": [
-            "demo_tests/static/tests/tours/project_task_tour.js",
+            "demo_tests/static/tests/tours/*",
         ],
     },
     "demo": [
+        "demo/res_partner_demo.xml",
         "demo/project_task_demo.xml",
     ],
     "installable": True,
