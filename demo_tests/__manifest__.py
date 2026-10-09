@@ -13,10 +13,11 @@
     ],
     "assets": {
         "web.assets_tests": [
-            "demo_tests/static/tests/tours/project_task_tour.js",
+            "demo_tests/static/tests/tours/*",
         ],
     },
     "demo": [
+        "demo/res_partner_demo.xml",
         "demo/project_task_demo.xml",
     ],
     "installable": True,
