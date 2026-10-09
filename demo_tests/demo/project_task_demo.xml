@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="project_task_groot_furniture" model="project.task">
+        <field name="name">Emergency Furniture Order - Groot's New Arms</field>
+        <field name="project_id" ref="project.project_project_1"/>
+        <field name="description">
+            Customer: Guardians of the Galaxy
+
+            Task: Manufacture a premium wooden dining table using
+            ethically questionable wood sourced from Groot.
+
+            Requirements:
+            - Must withstand Rocket's questionable engineering.
+            - No splinters. Groot has enough problems already.
+            - Table legs must not spontaneously grow back.
+            - Confirm the wood does not say "I am Groot" when knocked on.
+            - Obtain written consent from the tree before cutting.
+
+            Delivery deadline: Before Groot notices.
+            Quality control: Preferably performed by someone
+            who is not a raccoon with explosives.
+        </field>
+        <field name="task_type">manual</field>
+    </record>
+</odoo>
