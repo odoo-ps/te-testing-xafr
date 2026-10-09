@@ -15,6 +15,7 @@ class ProjectTask(models.Model):
         groups="project.group_project_manager",
         # required=True,
     )
+    task_warning_type = fields.Char(string="Task Type")
 
     priority = fields.Selection(compute="_compute_priority", store=True)
 
