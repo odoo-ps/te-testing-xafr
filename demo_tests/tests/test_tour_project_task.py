@@ -26,7 +26,8 @@ class HttpCaseDemo(HttpCase):
             ],
         })
 
-        cls.project = cls.user = cls.env["project.project"].create({"name": "Tech Evening Project"})
+        cls.project_name = "Tech Evening Project"
+        cls.project = cls.user = cls.env["project.project"].create({"name": cls.project_name})
 
     @tagged("post_install", "-at_install", "tour")
     def test_02_user_cannot_access_task_type(self):
@@ -43,14 +44,14 @@ class HttpCaseDemo(HttpCase):
         self.start_tour(
             "/odoo",
             'te_demo_admin_tour',
-            login='test_project_admin',
-            # watch=True,
+            login='test_project_admin', # test_project_admin
+            # debug=True,
             # step_delay=750
         )
 
     @classmethod
     def tearDownClass(cls):
-        project = cls.env["project.project"].sudo().search([("name", "=", "Tech Evening Project")], limit=1)
+        project = cls.env["project.project"].sudo().search([("name", "=", cls.project_name)], limit=1)
 
         if project:
             project.unlink()

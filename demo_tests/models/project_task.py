@@ -13,7 +13,6 @@ class ProjectTask(models.Model):
             ("other", "Other"),
         ],
         groups="project.group_project_manager",
-        # required=True,
     )
 
     priority = fields.Selection(compute="_compute_priority", store=True)
