@@ -12,6 +12,7 @@ class ProjectTask(models.Model):
             ("manual", "Manual"),
             ("other", "Other"),
         ],
+        # required=True,
         groups="project.group_project_manager",
     )
 

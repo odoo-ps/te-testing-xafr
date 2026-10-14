@@ -32,7 +32,7 @@ class TestProjectTaskDemoAdmin(BaseCommon):
         self.assertEqual(self.task.priority, "3")
 
         self.task.write({"task_type": "other"})
-        self.assertEqual(self.task.priority, "0")
+        self.assertEqual(self.task.priority, "2")
 
         self.task.write({"task_type": "technical"})
         self.assertEqual(self.task.priority, "1")

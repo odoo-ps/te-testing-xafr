@@ -44,7 +44,7 @@ class HttpCaseDemo(HttpCase):
         self.start_tour(
             "/odoo",
             'te_demo_admin_tour',
-            login='test_project_admin', # test_project_admin
+            login='wrong_user', # test_project_admin
             # debug=True,
             # step_delay=750
         )
